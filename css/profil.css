@@ -1,0 +1,29 @@
+/* Navbar logo resmi */
+.navbar-brand img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+/* Ana içerik alanı için üst boşluk */
+.main-content {
+    padding-top: 20px;
+}
+
+/* Profil fotoğrafı */
+.profile-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Şifre eşleşmeme hatası */
+#passwordMatchError {
+    display: none;
+}
+
+/* Footer için stil */
+footer {
+    margin-top: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Eğitimi</title>
+    <link rel="icon" type="image/x-icon" href="../image/sayfaiconu.ico">
+
+    <!-- Bootstrap CSS: Sayfa tasarımı için Bootstrap framework'ü dahil ediliyor -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome: İkonlar için Font Awesome kütüphanesi ekleniyor -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- CSS Bağlantısı: Özel stil dosyası dahil ediliyor -->
+    <link rel="stylesheet" href="../css/egitim.css">
+</head>
+
+<body>
+    <!-- Navbar: Sayfanın üst kısmındaki gezinme çubuğu -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <!-- Logo -->
+                <img src="../image/sayfaiconu.ico" alt="Logo" style="height: 50px; margin-right: 10px;">
+                Yazılım Öğrenelim!
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="girisyapildi.html">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="js-egitimi.html">JavaScript Eğitimi</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Eğitim İçeriği: JavaScript eğitimi sayfasının ana içeriği -->
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Video Oynatıcı: Eğitim videosunun bulunduğu bölüm -->
+            <div class="col-md-8">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h4 class="card-title mb-3">JavaScript Eğitimi - Giriş</h4>
+                        <div class="video-container">
+                            <!-- YouTube Video Oynatıcı: JavaScript eğitim videosu -->
+                            <iframe id="video-player" src="https://www.youtube.com/embed/k-G9yvnqFUo" frameborder="0"
+                                allowfullscreen></iframe>
+                            <!--Bu yapının kullanılma amacı, YouTube video gömme (embed) kodunun HTML sayfasına dahil edilmesidir.-->
+                        </div>
+                        <div class="mt-3">
+                            <h5>Video Açıklaması</h5>
+                            <p>Bu videoda JavaScript'in temellerini öğreneceksiniz. JavaScript nedir, nasıl kullanılır
+                                ve temel JavaScript kavramları nelerdir gibi konuları ele alacağız.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Listesi: Diğer ders videolarının listelendiği bölüm -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="mb-0">Ders İçeriği</h5>
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="video-list">
+                            <!-- Video Liste Öğeleri: Her bir ders videosu için bir liste öğesi -->
+                            <div class="video-item p-3 border-bottom active" data-video-id="k-G9yvnqFUo">
+                                <h6 class="mb-1">1. JavaScript'e Giriş</h6>
+                                <small class="text-muted">5:36</small>
+                            </div>
+
+                            <div class="video-item p-3 border-bottom" data-video-id="Nf_3yofxtbU">
+                                <h6 class="mb-1">2. Değişkenler ve Veri Tipleri</h6>
+                                <small class="text-muted">7:37</small>
+                            </div>
+
+                            <div class="video-item p-3 border-bottom" data-video-id="oY0e1Egh9vQ">
+                                <h6 class="mb-1">3. Return ve Fonksiyon içinde Fonksiyon</h6>
+                                <small class="text-muted">7:14</small>
+                            </div>
+
+                            <div class="video-item p-3 border-bottom" data-video-id="3vpK4NbFao8">
+                                <h6 class="mb-1">4. Döngü (Loop) Fonksiyonlar</h6>
+                                <small class="text-muted">10:31</small>
+                            </div>
+
+                            <div class="video-item p-3 border-bottom" data-video-id="g4jx7RolUyI">
+                                <h6 class="mb-1">5. If/Else Komutları</h6>
+                                <small class="text-muted">6:42</small>
+                            </div>
+
+                            <div class="video-item p-3 border-bottom" data-video-id="j7J9OnXt-t0">
+                                <h6 class="mb-1">6. While Komutu</h6>
+                                <small class="text-muted">17:25</small>
+                            </div>
+
+                            <div class="video-item p-3 border-bottom" data-video-id="wAmVjIIFFM0">
+                                <h6 class="mb-1">7. Array Yaratma, Index ve Uzunluk Kavramları</h6>
+                                <small class="text-muted">10:34</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer: Sayfanın alt kısmındaki bilgiler -->
+    <footer class="bg-dark text-light py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Hakkımızda</h5>
+                    <p>Yazılım Öğrenelim! olarak, kaliteli ve erişilebilir eğitim sunmayı hedefliyoruz.</p>
+                </div>
+
+                <div class="col-md-4">
+                    <h5>Hızlı Bağlantılar</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="../index.html" class="text-light">Ana Sayfa</a></li>
+                        <li><a href="#" class="text-light">Eğitimler</a></li>
+                        <li><a href="#" class="text-light">İletişim</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <h5>İletişim</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-envelope me-2"></i> info@yazilimogrenelim.com</li>
+                        <li><i class="fas fa-phone me-2"></i> +90 111 111 11 11</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS: Bootstrap için gerekli JavaScript dosyasının bağlantısı -->
+    <!-- Video Listesi Etkileşimi: Video listesine tıklanıldığında video oynatıcıyı günceller -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js">
+
+        document.querySelectorAll('.video-item').forEach(item => {
+            item.addEventListener('click', function () {
+                // Aktif sınıfı kaldır
+                document.querySelectorAll('.video-item').forEach(i => i.classList.remove('active'));
+                // Tıklanan öğeye aktif sınıfı ekle
+                this.classList.add('active');
+                // Video ID'sini al
+                const videoId = this.getAttribute('data-video-id');
+                // Video URL'sini güncelle
+                document.getElementById('video-player').src = `https://www.youtube.com/embed/${videoId}`;
+            });
+        });
+    </script>
+</body>
+
+</html>
