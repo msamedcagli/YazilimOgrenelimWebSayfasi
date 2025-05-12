@@ -158,8 +158,11 @@
         </footer>
     </div>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"> 
+    <!-- Bootstrap JS sadece script kaynağı olarak kullanılmalı -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Giriş/Kayıt form geçiş ve doğrulama işlemleri -->
+    <script>
         // Form switch functionality
         const loginRadio = document.getElementById('login');
         const registerRadio = document.getElementById('register');
@@ -167,42 +170,45 @@
         const registerForm = document.getElementById('registerForm');
         const formTitle = document.getElementById('formTitle');
 
-        loginRadio.addEventListener('change', function () {
-            if (this.checked) {
-                loginForm.style.display = 'block';
-                registerForm.style.display = 'none';
-                formTitle.textContent = 'Giriş Yap';
-            }
-        });
+        if (loginRadio && registerRadio && loginForm && registerForm && formTitle) {
+            loginRadio.addEventListener('change', function () {
+                if (this.checked) {
+                    loginForm.style.display = 'block';
+                    registerForm.style.display = 'none';
+                    formTitle.textContent = 'Giriş Yap';
+                }
+            });
 
-        registerRadio.addEventListener('change', function () {
-            if (this.checked) {
-                loginForm.style.display = 'none';
-                registerForm.style.display = 'block';
-                formTitle.textContent = 'Kayıt Ol';
-            }
-        });
+            registerRadio.addEventListener('change', function () {
+                if (this.checked) {
+                    loginForm.style.display = 'none';
+                    registerForm.style.display = 'block';
+                    formTitle.textContent = 'Kayıt Ol';
+                }
+            });
+        }
 
         // Form validation
         (function () {
             'use strict'
-            var forms = document.querySelectorAll('.needs-validation')
+            const forms = document.querySelectorAll('.needs-validation');
             Array.prototype.slice.call(forms)
                 .forEach(function (form) {
                     form.addEventListener('submit', function (event) {
                         if (!form.checkValidity()) {
-                            event.preventDefault()
-                            event.stopPropagation()
+                            event.preventDefault();
+                            event.stopPropagation();
                         }
-                        form.classList.add('was-validated')
-                    }, false)
-                })
-        })()
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+        })();
     </script>
 
-    <!-- Register JS -->
+    <!-- Register JS: Eğer modül olarak JS dosyası yükleniyorsa, bu şekilde bırakılabilir -->
     <script type="module" src="../js/register.js"></script>
-    
+
+
 </body>
 
 </html>
