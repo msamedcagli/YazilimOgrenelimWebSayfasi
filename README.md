@@ -1,9 +1,22 @@
 <h1>Yazılım Öğrenelim!</h1>
   <p>Web Programlama Dersinin Proje Ödevidir.</p>
 
-<br>
+## Uygulama Görselleri
+|               Ana Sayfa              |             Ana Sayfa Devamı              |
+| :----------------------------------: | :---------------------------------------: |
+|    ![](webgorsel/anasayfa1.png)      |       ![](webgorsel/anasayfa2.png)        |
+|           Giriş Yap Sayfası          |              Kayıt Ol Sayfası             |
+|    ![](webgorsel/girisyap.png)       |        ![](webgorsel/kayitol.png)         |
+|         Giriş Yapıldı Sayfası        |               Profil Sayfası              |
+|    ![](webgorsel/girisyapildi.png)   |        ![](webgorsel/profil.png)          |
+|             Eğitim Sayfası           |            Eğitim Sayfası Devamı          |
+|    ![](webgorsel/egitimsayfasi.png)  |        ![](webgorsel/egitimsayfasi2.png)  |
 
-<h2>Son Güncelleme (12.05.2025)</h2>
+
+<h2>Yeni Güncelleme (13.05.2025)</h2>
+<p>Projenin Görselleri Yüklendi</p>
+  <br>
+<h2>Güncelleme (12.05.2025)</h2>
   <ul>
     <li>Proje klasör yapısı yeniden düzenlendi.</li>
     <li>Mevcut kod hataları giderildi.</li>
